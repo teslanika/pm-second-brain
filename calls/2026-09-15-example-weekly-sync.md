@@ -1,7 +1,7 @@
 ---
 type: call
 date: 2026-09-15
-source: raw/2026-09-15-example-weekly-sync.md
+source: raw/2026-09-15-example-weekly-sync-transcript.md
 status: draft
 ---
 
@@ -14,7 +14,7 @@ status: draft
 ## О чём говорили
 
 Пользователи не замечают новые сообщения от преподавателей. За две недели
-34 обращения в поддержку. [источник: [[2026-09-15-example-weekly-sync]]]
+34 обращения в поддержку. [источник: raw/2026-09-15-example-weekly-sync-transcript.md]
 
 ## Что решили
 

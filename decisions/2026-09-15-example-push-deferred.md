@@ -1,7 +1,7 @@
 ---
 type: decision
 date: 2026-09-15
-source: raw/2026-09-15-example-weekly-sync.md
+source: raw/2026-09-15-example-weekly-sync-transcript.md
 status: draft
 ---
 
