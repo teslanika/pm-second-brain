@@ -5,33 +5,33 @@ source: calls/2026-09-15-example-weekly-sync.md
 status: confirmed
 ---
 
-# Продукт
+# Product
 
-> Долгосрочное. Этот файл не закрывают — его правят, когда факт меняется.
+> Long-lived. This file is never closed — it is edited when a fact changes.
 
-## Что это
+## What it is
 
-Платформа онлайн-курсов. Ученик покупает курс, проходит уроки, переписывается
-с преподавателем.
+An online-course platform. A student buys a course, works through the lessons,
+and exchanges messages with a teacher.
 
-## Кто пользуется
+## Who uses it
 
-- **Ученик** — проходит курс, задаёт вопросы преподавателю.
-- **Преподаватель** — ведёт группу, отвечает на вопросы, проверяет задания.
-- **Поддержка** — разбирает обращения. Источник сигнала о проблемах.
+- **Student** — takes the course, asks the teacher questions.
+- **Teacher** — runs a group, answers questions, marks assignments.
+- **Support** — handles tickets. The source of signal about problems.
 
-## Чем меряем
+## How we measure it
 
-- Доля учеников, дошедших до конца курса.
-- Время ответа преподавателя на вопрос.
-- Обращения в поддержку на 100 активных учеников.
+- Share of students who finish a course.
+- Teacher response time to a question.
+- Support tickets per 100 active students.
 
-## Что не меняется
+## What does not change
 
-- Мобильное приложение и веб работают на одном API.
-- Сервиса push-уведомлений под iOS пока нет.
-  [источник: Борис, [[2026-09-15-example-weekly-sync]]]
+- The mobile app and the web run on one API.
+- There is no iOS push-notification service yet.
+  [source: Boris, [[2026-09-15-example-weekly-sync]]]
 
-## История правок
+## Edit history
 
-- 2026-09-01 — создан.
+- 2026-09-01 — created.

@@ -1,63 +1,68 @@
-# Карта базы
+# Map of the base
 
-Точка входа. Агент читает этот файл первым и дальше идёт по ссылкам, а не
-перебирает все папки.
+The entry point. The agent reads this file first and then follows the links,
+instead of walking every folder.
 
-## Долгосрочное
+## Long-lived
 
-Что верно про продукт всегда. Эти файлы не закрывают — их правят.
+What is always true about the product. These files are never closed — they are
+edited.
 
-| Файл | О чём |
+| File | About |
 |---|---|
-| [[example-product]] | продукт, роли, метрики |
-| [[example-customers]] | клиенты и их повторяющиеся просьбы |
+| [[example-product]] | product, roles, metrics |
+| [[example-customers]] | customers and what they keep asking for |
 
-## Сейчас в работе
+## Current work
 
-Темы со статусом `active`. Это текущая работа.
+Topics with `status: active`.
 
-| Тема | Открыта | Чем закроем |
+| Topic | Opened | What closes it |
 |---|---|---|
-| [[2026-09-01-example-notifications]] | 2026-09-01 | счётчик в проде, обращения падают две недели |
+| [[2026-09-01-example-notifications]] | 2026-09-01 | counter in production, tickets falling for two weeks |
 
-## Закрытые темы
+## Closed topics
 
-История. Не читай как текущую работу.
+History. Do not read as current work.
 
-| Тема | Закрыта | Чем закончилось |
+| Topic | Closed | How it ended |
 |---|---|---|
-| [[2026-06-15-example-course-search]] | 2026-07-20 | поиск по курсам вышел в прод |
+| [[2026-06-15-example-course-search]] | 2026-07-20 | course search shipped to production |
 
-## Решения
+## Decisions
 
-| Решение | Дата | Статус |
+| Decision | Date | Status |
 |---|---|---|
-| [[2026-09-15-example-push-deferred]] | 2026-09-15 | черновик |
+| [[2026-09-15-example-push-deferred]] | 2026-09-15 | draft |
 
-## Спеки
+## Specs
 
-| Спека | Статус |
+| Spec | Status |
 |---|---|
-| [[example-unread-badge]] | черновик |
+| [[example-unread-badge]] | draft |
 
-## Встречи
+## Meetings
 
-| Заметка | Источник |
+| Note | Source |
 |---|---|
 | [[2026-09-15-example-weekly-sync]] | [[2026-09-15-example-weekly-sync-transcript]] |
 
-## Служебное
+## Housekeeping
 
-- [[AGENTS]] — правила, которые агент читает перед каждой задачей.
-- [[README]] — зачем это всё и список команд.
+- [[AGENTS]] — the rules the agent reads before every task.
+- [[README]] — why this exists and what the commands are.
 
-Скиллы в `skills/` — инструменты, а не знание. В индексе их нет,
-и в графе они спрятаны фильтром `-path:skills`. Список команд один,
-и он в README.
+The skills in `skills/` are tools, not knowledge. They are not in the index,
+and the graph hides them with the filter `-path:skills`. There is one list of
+commands and it lives in the README.
 
-## Как этим пользоваться
+`ru/` holds the same example set in Russian. It is a translation of the
+examples only — the rules and the commands exist once, in English, at the root.
+Delete the folder if you don't need it.
 
-Порядок чтения: индекс → `context/` → активные темы → дальше по ссылкам.
+## How to use this
 
-Индекс обновляет агент, когда создаёт файл. Если строки нет в индексе, файл
-для базы почти не существует: его никто не найдёт.
+Reading order: index → `context/` → active topics → onward by link.
+
+The agent updates the index when it creates a file. A file with no line in the
+index barely exists as far as the base is concerned: nobody will find it.

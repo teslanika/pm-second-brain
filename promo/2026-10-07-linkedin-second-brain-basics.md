@@ -1,31 +1,34 @@
 # LinkedIn, 2026-10-07 — Second Brain basics
 
-Опубликовано 2026-10-07 в личном LinkedIn. Сверено с живым постом 2026-10-13.
+Published 2026-10-07 on a personal LinkedIn account. Checked against the live
+post on 2026-10-13.
 
-Это самое короткое публичное объяснение того, зачем нужен этот репозиторий:
-чем папка отличается от базы, у которой файлы знают про свои связи. Годится как
-анонс вебинара и как текст, которым можно объяснить проект человеку, который
-ещё ничего не ставил.
+This is the shortest public explanation of why this repository exists: what
+separates a folder from a base whose files know about their own connections.
+It works as a webinar trailer, and as the text you send someone who has
+installed nothing yet.
 
-- Визуал: две картинки графа рядом — слева обычная папка, справа связанный vault.
-- Текст ниже — ровно то, что было опубликовано.
+- Visual: two graph screenshots side by side — a plain folder on the left, a
+  linked vault on the right.
+- The text below is exactly what was published.
 
-## Что из поста ложится прямо в проект
+## What the post maps onto in this project
 
-1. **Открывающий вопрос** — «вы дали ИИ доступ ко всем файлам, почему ответы
-   всё ещё расплывчатые» — ставит проблему, не называя ни одного инструмента.
-2. **Пример фронтматтера** — настоящая запись решения с `supersedes` и
-   `contradicts`. Он уже санитизирован и опубликован, так что его можно
-   показывать любому залу.
-3. **Аргумент про противоречие** — два спорящих документа в списке файлов
-   выглядят одинаково; типизированные связи заставляют модель показать оба
-   вместо того, чтобы усреднить. Это четвёртое правило из `AGENTS.md`, и это
-   единственное, чего папка не умеет в принципе.
+1. **The opening question** — "you gave your AI access to all your files, why
+   are the answers still vague" — states the problem without naming a single
+   tool.
+2. **The frontmatter example** — a real decision record carrying `supersedes`
+   and `contradicts`. It is already sanitised and published, so it can be shown
+   to any room.
+3. **The argument about contradiction** — two documents that disagree look
+   identical in a file list; typed relations force the model to show both
+   instead of averaging them. That is rule four in `AGENTS.md`, and it is the
+   one thing a folder cannot do at all.
 
-Чего в посте нет и что в проекте есть: разделение долгого и короткого
-(шестое правило) и `status: draft` как умолчание (третье).
+What the post leaves out and the project has: the split between long-lived and
+short-lived (rule six) and `status: draft` as the default (rule three).
 
-## Текст поста
+## The post
 
 You gave your AI access to all your files, so why are the answers still so vague?
 
@@ -96,18 +99,17 @@ So now I ask you: is your AI reading a folder, or is it reading something that k
 
 #AI #KnowledgeManagement #ProductManagement
 
-## Как это отрисовал LinkedIn
+## How LinkedIn rendered it
 
-Полезно знать, если будешь переиспользовать формат:
+Worth knowing if you reuse the format:
 
-- Ведущий `-` у списков срезается, поэтому четыре пункта «что ты получаешь»
-  читаются сплошным абзацем.
-- Рамка `---` вокруг фронтматтера схлопывается, а пустая строка перед
-  «Now look at what each line does» исчезает — пример упирается прямо
-  в следующее предложение.
-- Markdown-жирный отрисовывается буквально. Поэтому заголовки разделов
-  набраны капсом, а не болдом.
+- A leading `-` on a list item is stripped, so the four "what you get out of
+  it" points read as one solid paragraph.
+- The `---` fence around the frontmatter collapses, and the blank line before
+  "Now look at what each line does" disappears — the example runs straight into
+  the next sentence.
+- Markdown bold renders literally. That is why the section headers are in caps
+  rather than bold.
 
-Стилевой образец прозы: Gust de Backer (gustdebacker.com). Чего избегали:
-негативного параллелизма «it's not X, it's Y», катафорических завлекалок,
-рубленых пар-фрагментов.
+Prose model: Gust de Backer (gustdebacker.com). What was avoided: the negative
+parallelism of "it's not X, it's Y", cataphoric teasers, chopped fragment pairs.

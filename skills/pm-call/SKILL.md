@@ -1,22 +1,23 @@
 ---
 name: pm-call
 description: >
-  Превращает транскрипт встречи в заметку и список решений. Используй,
-  когда пользователь положил файл в raw/ и просит обработать встречу,
-  говорит "разбери звонок", "обработай встречу", "process this call",
-  или запускает /pm-call.
+  Turns a meeting transcript into a note and a list of decisions. Use when
+  the user has put a file in raw/ and asks to process the meeting, says
+  "process this call", "разбери звонок", "обработай встречу", or runs
+  /pm-call.
 allowed-tools: Bash Read Write Edit Glob Grep
 ---
 
-# Разбор встречи
+# Process a meeting
 
-## Шаги
+## Steps
 
-1. Прочитай `index.md` и активные темы в `topics/`, чтобы понять, к чему
-   относится встреча.
-2. Прочитай файл из `raw/` целиком.
-3. Назови 3–5 главных выводов и спроси, что важно, а что пропустить. Дождись ответа.
-4. Создай заметку в `calls/` с тем же именем, что у источника:
+1. Read `index.md` and the active topics in `topics/` to work out what the
+   meeting relates to.
+2. Read the file in `raw/` in full.
+3. Name the 3–5 main takeaways and ask which matter and which to drop. Wait
+   for the answer.
+4. Create a note in `calls/` with the same name as the source:
 
    ```yaml
    ---
@@ -27,19 +28,20 @@ allowed-tools: Bash Read Write Edit Glob Grep
    ---
    ```
 
-   Дальше: кто был, о чём говорили, что решили, что осталось открытым.
-5. Для каждого решения создай отдельный файл в `decisions/`. В нём: что решили, почему, откуда известно.
-6. Свяжи файлы через `[[имя-файла]]`.
-7. Допиши строку в раздел «Ход темы» у той темы, к которой относится встреча.
-   Подходящей темы нет — предложи завести её через `/pm-topic`.
-8. Добавь новые файлы в `index.md`.
-9. Отчитайся: сколько файлов создал и какие вопросы остались открытыми.
+   Then: who was there, what was discussed, what was decided, what was left open.
+5. For each decision create a separate file in `decisions/`: what was decided,
+   why, and how it is known.
+6. Link the files with `[[file-name]]`.
+7. Add a line to the "Log" section of the topic the meeting relates to.
+   If no topic fits, offer to open one with `/pm-topic`.
+8. Add the new files to `index.md`.
+9. Report back: how many files you created and what questions are still open.
 
-## Правила
+## Rules
 
-- Файл в `raw/` не меняй.
-- Каждое утверждение — со ссылкой на источник.
-- Чего в транскрипте нет, того не придумывай. Пиши открытый вопрос.
-- Прямую речь оставляй на языке оригинала.
-- Факт, который верен всегда, а не только на этой неделе, предложи вынести
-  в `context/`. Сам туда не пиши без подтверждения.
+- Don't change the file in `raw/`.
+- Every claim carries a link to its source.
+- Don't invent what isn't in the transcript. Write an open question instead.
+- Leave quoted speech in the language it was said in.
+- A fact that is true always, not just this week, should be offered for
+  `context/`. Don't write there yourself without confirmation.

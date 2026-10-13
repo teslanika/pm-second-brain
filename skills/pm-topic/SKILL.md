@@ -1,23 +1,23 @@
 ---
 name: pm-topic
 description: >
-  Открывает, ведёт и закрывает короткосрочную тему в topics/. Используй,
-  когда пользователь говорит "заведи тему", "что у нас в работе",
-  "закрой тему", "open a topic", "close the topic", или запускает /pm-topic.
+  Opens, tracks and closes a short-lived topic in topics/. Use when the user
+  says "open a topic", "what's in work", "close the topic", "заведи тему",
+  "что у нас в работе", "закрой тему", or runs /pm-topic.
 allowed-tools: Bash Read Write Edit Glob Grep
 ---
 
-# Темы
+# Topics
 
-Тема — это короткая нить работы: запуск, расследование, спорный вопрос.
-У неё есть начало и конец. Этим она отличается от файлов в `context/`,
-которые не закрывают.
+A topic is a short thread of work: a launch, an investigation, a disputed
+question. It has a beginning and an end. That is what separates it from the
+files in `context/`, which are never closed.
 
-## Открыть тему
+## Open a topic
 
-1. Спроси, зачем открываем тему и по чему поймём, что её можно закрыть.
-   Без второго ответа тему не заводи — иначе она останется открытой навсегда.
-2. Создай файл `topics/ГГГГ-ММ-ДД-название.md`:
+1. Ask why the topic is being opened and how you will know it can be closed.
+   Without the second answer, don't create it — otherwise it stays open forever.
+2. Create `topics/YYYY-MM-DD-name.md`:
 
    ```yaml
    ---
@@ -28,34 +28,35 @@ allowed-tools: Bash Read Write Edit Glob Grep
    ---
    ```
 
-3. Заполни разделы:
-   - **Зачем открыли** — со ссылкой на источник.
-   - **Когда закроем** — проверяемое условие.
-   - **Что уже решено** — ссылки на `decisions/`.
-   - **Что в работе** — ссылки на `specs/`.
-   - **Открытые вопросы** — у каждого владелец.
-   - **Ход темы** — даты и что произошло, по возрастанию.
-4. Добавь строку в `index.md`, раздел «Сейчас в работе».
+3. Fill in the sections:
+   - **Why it was opened** — with a link to the source.
+   - **What closes it** — a checkable condition.
+   - **Already decided** — links to `decisions/`.
+   - **In progress** — links to `specs/`.
+   - **Open questions** — each with an owner.
+   - **Log** — dates and what happened, oldest first.
+4. Add a line to `index.md`, section "Current work".
 
-## Показать, что в работе
+## Show what is in work
 
-1. Прочитай `index.md` и все файлы в `topics/` со `status: active`.
-2. Для каждой темы покажи: зачем открыли, чем закроем, что осталось открытым.
-3. Назови темы, где последняя запись в «Ходе темы» старше месяца. Спроси,
-   живые они ещё или их пора закрыть.
+1. Read `index.md` and every file in `topics/` with `status: active`.
+2. For each topic show: why it was opened, what closes it, what is still open.
+3. Name the topics whose last Log entry is older than a month. Ask whether they
+   are still alive or ready to close.
 
-## Закрыть тему
+## Close a topic
 
-1. Спроси, выполнено ли условие из раздела «Когда закроем».
-2. **Файл не удаляй.** Поставь `status: done`, обнови `date` на дату закрытия.
-3. Допиши раздел «Чем закончилось» и последнюю строку в «Ход темы».
-4. Если что-то осталось за рамками, назови это явно. Либо заведи новую тему,
-   либо пометь `TBD`.
-5. В `index.md` перенеси строку из «Сейчас в работе» в «Закрытые темы».
+1. Ask whether the condition under "What closes it" has been met.
+2. **Don't delete the file.** Set `status: done` and update `date` to the
+   closing date.
+3. Write the "How it ended" section and the final Log line.
+4. If anything was left out of scope, name it explicitly. Either open a new
+   topic or mark it `TBD`.
+5. In `index.md`, move the line from "Current work" to "Closed topics".
 
-## Правила
+## Rules
 
-- Тему без условия закрытия не заводи.
-- Закрытую тему не выдавай как текущую работу.
-- Что попало в тему, должно ссылаться на источник.
-- Долгосрочный факт в тему не пиши. Ему место в `context/`.
+- Never open a topic without a closing condition.
+- Never present a closed topic as current work.
+- Whatever goes into a topic must cite a source.
+- Don't write a long-lived fact into a topic. It belongs in `context/`.

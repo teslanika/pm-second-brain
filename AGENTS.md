@@ -1,42 +1,44 @@
-# Второй мозг продакта
+# A product manager's second brain
 
-Ты ведёшь базу знаний продакт-менеджера. База — обычные markdown-файлы в этой папке.
+You maintain a product manager's knowledge base. The base is plain markdown
+files in this folder.
 
-## Структура
+## Structure
 
-- `index.md` — карта базы. **Читай первым.**
-- `context/` — долгосрочное: продукт, клиенты, ограничения. Не устаревает.
-- `topics/` — короткосрочное: что сейчас в работе. У каждой темы есть срок.
-- `raw/` — источники: транскрипты, письма, выгрузки. **Не меняй эти файлы.**
-- `calls/` — заметки со встреч. Одна встреча — один файл.
-- `decisions/` — что решили и почему. Одно решение — один файл.
-- `specs/` — что делаем. Одна фича — один файл.
+- `index.md` — map of the base. **Read it first.**
+- `context/` — long-lived: product, customers, constraints. Does not go stale.
+- `topics/` — short-lived: what is in work now. Every topic has an end.
+- `raw/` — sources: transcripts, emails, exports. **Do not change these files.**
+- `calls/` — meeting notes. One meeting, one file.
+- `decisions/` — what was decided and why. One decision, one file.
+- `specs/` — what is being built. One feature, one file.
 
-## Шесть правил
+## Six rules
 
-1. **Не меняй файлы в `raw/`.** Читай их, но не редактируй и не удаляй.
-2. **Каждое утверждение ссылается на источник.** Ставь ссылку на файл в `raw/` или на другой документ базы. Утверждение без источника — дефект, а не мелочь.
-3. **Что написал ты — черновик.** Ставь `status: draft`. Поменять статус на `confirmed` может только человек.
-4. **Противоречие показывай, а не разрешай.** Если новый источник спорит со старым документом, покажи оба и пометь `[проверить]`.
-5. **Наружу ничего не публикуй.** Не пиши в трекеры, чаты и почту. Готовь черновик, публикует человек.
-6. **У короткого есть срок, у долгого нет.** Файл в `topics/` несёт `status: active` или `status: done`. Тему со статусом `done` не читай как текущую работу — это история. Файл в `context/` не закрывают, его правят.
+1. **Don't change files in `raw/`.** Read them, but never edit or delete them.
+2. **Every claim links to a source.** Link to a file in `raw/` or to another document in the base. A claim with no source is a defect, not a detail.
+3. **What you wrote is a draft.** Set `status: draft`. Only a human can change a status to `confirmed`.
+4. **Show a contradiction, don't resolve it.** If a new source disagrees with an existing document, show both and mark it `[verify]`.
+5. **Publish nothing outward.** Don't write to trackers, chats or email. You prepare the draft; a human publishes it.
+6. **The short-lived has an end, the long-lived does not.** A file in `topics/` carries `status: active` or `status: done`. Never read a `done` topic as current work — it is history. A file in `context/` is never closed, it is edited.
 
-Шестое правило чинит тихую поломку. Без срока база через полгода полна записей
-«сейчас разбираемся с X», и модель читает их как настоящее. Ничего не ломается,
-просто ответы постепенно становятся неверными.
+The sixth rule fixes a quiet failure. Without an end date the base fills up,
+six months on, with notes saying "we're currently looking into X" that were
+written in the spring. The model reads them as the present. Nothing breaks
+loudly — the answers just slowly go wrong.
 
-## Порядок чтения
+## Reading order
 
-1. `index.md` — что вообще есть в базе.
-2. `context/` — что верно всегда.
-3. Темы со `status: active` в `topics/` — что происходит сейчас.
-4. Дальше по ссылкам: решения, спеки, заметки, источники.
+1. `index.md` — what is in the base at all.
+2. `context/` — what is always true.
+3. Topics with `status: active` in `topics/` — what is happening now.
+4. Onward by link: decisions, specs, notes, sources.
 
-Не читай базу целиком. Иди по ссылкам от индекса.
+Don't read the whole base. Follow the links from the index.
 
-## Формат файла
+## File format
 
-Каждый файл начинается с четырёх полей:
+Every file opens with four fields:
 
 ```yaml
 ---
@@ -47,27 +49,39 @@ status: draft
 ---
 ```
 
-- `date` — дата события. Для файлов в `context/` — дата последней правки.
-- `status` — `draft` или `confirmed`. Для тем — `active` или `done`.
+- `date` — the date of the event. For files in `context/`, the date of the last edit.
+- `status` — `draft` or `confirmed`. For topics, `active` or `done`.
 
-Ссылайся на другие файлы через `[[имя-файла]]`.
+Link to other files with `[[file-name]]`.
 
-`index.md`, `README.md` и `AGENTS.md` — служебные. Четыре поля им не нужны.
+`index.md`, `README.md` and `AGENTS.md` are housekeeping. They don't need the
+four fields.
 
-## Когда создаёшь файл
+## When you create a file
 
-1. Положи его в нужную папку.
-2. Проставь четыре поля.
-3. Сошлись на источник.
-4. **Добавь строку в `index.md`.** Файла нет в индексе — его никто не найдёт.
+1. Put it in the right folder.
+2. Fill in the four fields.
+3. Cite the source.
+4. **Add a line to `index.md`.** A file with no line in the index is a file
+   nobody will find.
 
-## Когда тема закрывается
+## When a topic closes
 
-Не удаляй её. Поставь `status: done`, допиши, чем закончилось, и перенеси
-строку в `index.md` из «Сейчас в работе» в «Закрытые темы».
+Don't delete it. Set `status: done`, write down how it ended, and move its line
+in `index.md` from "Current work" to "Closed topics".
 
-## Перед тем как писать
+## Before you write
 
-Прежде чем создать решение или спеку, посмотри, что база уже знает по теме.
-Прочитай `index.md`, `context/` и активные темы. Нашёл противоречие — вынеси
-его в документ, не выбирай сам.
+Before creating a decision or a spec, look at what the base already knows about
+the subject. Read `index.md`, `context/` and the active topics. If you find a
+contradiction, put it in the document — don't pick a side yourself.
+
+## Language
+
+These rules and the skills in `skills/` are in English because that is what the
+model reads most reliably. **The files you write go in the language the user
+writes to you in**, and quoted speech always stays in the language it was said
+in.
+
+`ru/` holds the same example set in Russian. It is a translation of the
+examples only; the rules and the commands exist once, here, in English.

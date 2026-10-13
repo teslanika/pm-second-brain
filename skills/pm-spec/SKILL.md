@@ -1,27 +1,28 @@
 ---
 name: pm-spec
 description: >
-  Собирает черновик спеки из заметок и решений. Используй, когда
-  пользователь говорит "напиши спеку", "собери требования",
-  "draft a spec", или запускает /pm-spec.
+  Builds a draft spec out of notes and decisions. Use when the user says
+  "draft a spec", "pull the requirements together", "напиши спеку",
+  "собери требования", or runs /pm-spec.
 allowed-tools: Bash Read Write Edit Glob Grep
 ---
 
-# Черновик спеки
+# Draft spec
 
-## Перед тем как писать
+## Before you write
 
-Найди, что база уже знает по теме. Порядок: `index.md`, `context/`, активные
-темы в `topics/`, затем `decisions/` и `specs/`. Если нашёл противоречие,
-вынеси его в спеку и пометь `[проверить]`. Не выбирай сам.
+Find what the base already knows about the subject. In order: `index.md`,
+`context/`, the active topics in `topics/`, then `decisions/` and `specs/`.
+If you find a contradiction, put it in the spec and mark it `[verify]`.
+Don't pick a side yourself.
 
-Закрытую тему (`status: done`) читай как историю, а не как текущие требования.
+Read a closed topic (`status: done`) as history, not as current requirements.
 
-## Шаги
+## Steps
 
-1. Спроси, про какую фичу спека, если это не ясно.
-2. Собери источники: заметки в `calls/`, решения в `decisions/`.
-3. Создай файл в `specs/`:
+1. Ask which feature the spec is for, if that isn't clear.
+2. Gather the sources: notes in `calls/`, decisions in `decisions/`.
+3. Create a file in `specs/`:
 
    ```yaml
    ---
@@ -32,19 +33,19 @@ allowed-tools: Bash Read Write Edit Glob Grep
    ---
    ```
 
-4. Заполни разделы:
-   - **Задача** — какую проблему решаем и у кого она.
-   - **Что делаем** — границы работы.
-   - **Чего не делаем** — что сознательно оставляем за рамками.
-   - **Как поймём, что готово** — проверяемые условия.
-   - **Риски**
-   - **Открытые вопросы** — у каждого владелец или следующий шаг.
-   - **Источники** — ссылки `[[имя-файла]]` на всё, из чего это выросло.
-5. Поставь вверху текста пометку: черновик, требует ревью.
-6. Добавь спеку в `index.md` и в раздел «Что в работе» у своей темы.
+4. Fill in the sections:
+   - **Problem** — what problem is being solved and whose it is.
+   - **In scope** — the boundary of the work.
+   - **Out of scope** — what is deliberately left out.
+   - **How we know it is done** — checkable conditions.
+   - **Risks**
+   - **Open questions** — each with an owner or a next step.
+   - **Sources** — `[[file-name]]` links to everything this grew from.
+5. Put a note at the top of the body: draft, needs review.
+6. Add the spec to `index.md` and to the "In progress" section of its topic.
 
-## Правила
+## Rules
 
-- Утверждение без источника не пиши.
-- Догадку помечай отдельно. Не выдавай её за слова клиента.
-- Данных не хватает — пиши открытый вопрос, а не правдоподобный текст.
+- Never write a claim without a source.
+- Mark an inference as one. Don't pass it off as the customer's words.
+- If the evidence is thin, write an open question rather than plausible text.

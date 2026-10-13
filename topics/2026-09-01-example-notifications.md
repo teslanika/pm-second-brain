@@ -5,36 +5,37 @@ source: calls/2026-09-15-example-weekly-sync.md
 status: active
 ---
 
-# Как уведомлять учеников о сообщениях
+# How to tell students about messages
 
-> Короткосрочное. Тема открыта 1 сентября 2026. Пока `status: active` — это
-> текущая работа.
+> Short-lived. Opened 1 September 2026. Still `status: active` — this is
+> current work.
 
-## Зачем открыли
+## Why it was opened
 
-Ученики не замечают сообщения от преподавателей и отвечают через несколько дней.
-За две недели 34 обращения в поддержку.
-[источник: Вера, [[2026-09-15-example-weekly-sync]]]
+Students don't notice messages from teachers and reply days later. Thirty-four
+support tickets in two weeks.
+[source: Vera, [[2026-09-15-example-weekly-sync]]]
 
-## Когда закроем
+## What closes it
 
-Счётчик непрочитанного вышел в прод и обращения по теме падают две недели подряд.
+The unread counter is in production and tickets on this subject fall for two
+weeks running.
 
-## Что уже решено
+## Already decided
 
-- Push переносим, счётчик делаем сейчас: [[2026-09-15-example-push-deferred]]
+- Defer push, ship the counter now: [[2026-09-15-example-push-deferred]]
 
-## Что в работе
+## In progress
 
-- Спека счётчика: [[example-unread-badge]]
+- Counter spec: [[example-unread-badge]]
 
-## Открытые вопросы
+## Open questions
 
-- Что показывать при числе больше 99? Владелец: Аня.
-- Порог по обращениям в поддержку. Владелец: не назначен. `TBD`
+- What to show above 99? Owner: Anna.
+- The support-ticket threshold. Owner: unassigned. `TBD`
 
-## Ход темы
+## Log
 
-- 2026-09-01 — тема открыта после разбора обращений поддержки.
-- 2026-09-15 — синк: решили отложить push, делать счётчик.
+- 2026-09-01 — opened after a review of support tickets.
+- 2026-09-15 — sync: decided to defer push and ship the counter.
   [[2026-09-15-example-weekly-sync]]

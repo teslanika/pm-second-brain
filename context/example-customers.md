@@ -5,23 +5,23 @@ source: calls/2026-09-15-example-weekly-sync.md
 status: confirmed
 ---
 
-# Клиенты
+# Customers
 
-> Долгосрочное. Этот файл не закрывают — его правят, когда факт меняется.
+> Long-lived. This file is never closed — it is edited when a fact changes.
 
-## Школа «Пример»
+## Example School
 
-- Около 4000 активных учеников.
-- Просят отчёты по группам. Требование повторяется с весны 2026.
-- Контакт: не зафиксирован. `TBD`
+- Around 4,000 active students.
+- Asking for per-group reports. The request has recurred since spring 2026.
+- Contact: not recorded. `TBD`
 
-## Чего клиенты просят чаще всего
+## What customers ask for most often
 
-1. Быстрая связь с преподавателем. Отсюда выросла тема
-   [[2026-09-01-example-notifications]].
-2. Отчёты по группам.
-3. Работа без интернета.
+1. Faster contact with the teacher. This is where
+   [[2026-09-01-example-notifications]] came from.
+2. Per-group reports.
+3. Working without an internet connection.
 
-## История правок
+## Edit history
 
-- 2026-09-01 — создан.
+- 2026-09-01 — created.

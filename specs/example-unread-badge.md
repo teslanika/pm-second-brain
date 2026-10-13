@@ -5,42 +5,43 @@ source: calls/2026-09-15-example-weekly-sync.md
 status: draft
 ---
 
-# Счётчик непрочитанных сообщений
+# Unread message counter
 
-> Черновик. Составлен агентом, требует ревью.
+> Draft. Written by the agent, needs review.
 
-## Задача
+## Problem
 
-Пользователи не видят новые сообщения от преподавателей и отвечают с задержкой
-в несколько дней. За две недели 34 обращения в поддержку.
-[источник: Вера, [[2026-09-15-example-weekly-sync]]]
+Users don't see new messages from teachers and reply days late. Thirty-four
+support tickets in two weeks.
+[source: Vera, [[2026-09-15-example-weekly-sync]]]
 
-## Что делаем
+## In scope
 
-Показываем число непрочитанных сообщений на иконке раздела. Данные уже приходят
-на клиент. [источник: Борис, [[2026-09-15-example-weekly-sync]]]
+Show the number of unread messages on the section icon. The data already
+reaches the client. [source: Boris, [[2026-09-15-example-weekly-sync]]]
 
-## Чего не делаем
+## Out of scope
 
-Push-уведомления. Перенесены отдельным решением: [[2026-09-15-example-push-deferred]]
+Push notifications. Deferred by a separate decision:
+[[2026-09-15-example-push-deferred]]
 
-## Как поймём, что готово
+## How we know it is done
 
-- Число на иконке совпадает с количеством непрочитанных.
-- При открытии раздела число обнуляется.
-- Обращения в поддержку по этой теме сокращаются. Порог не согласован. `[проверить]`
+- The number on the icon matches the count of unread messages.
+- Opening the section resets the number to zero.
+- Support tickets on this subject fall. Threshold not agreed. `[verify]`
 
-## Риски
+## Risks
 
-Если счётчик не сбрасывать при открытии, он будет висеть постоянно и перестанет
-работать как сигнал. [источник: Борис, [[2026-09-15-example-weekly-sync]]]
+If the counter doesn't reset on open it sits there permanently and stops
+working as a signal. [source: Boris, [[2026-09-15-example-weekly-sync]]]
 
-## Открытые вопросы
+## Open questions
 
-- Что показывать при числе больше 99? Владелец: Аня, спросит у дизайна.
-- Порог успеха по обращениям в поддержку. Владелец: не назначен. `TBD`
+- What to show above 99? Owner: Anna, will ask design.
+- Success threshold on support tickets. Owner: unassigned. `TBD`
 
-## Источники
+## Sources
 
 - [[2026-09-15-example-weekly-sync]]
 - [[2026-09-15-example-push-deferred]]

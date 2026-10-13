@@ -1,30 +1,31 @@
 ---
 name: pm-recall
 description: >
-  Отвечает, что команда решила по теме и откуда это известно. Используй,
-  когда пользователь спрашивает "что мы решили про X", "почему мы так
-  сделали", "what did we decide about", или запускает /pm-recall.
+  Answers what the team decided about a subject and how that is known. Use
+  when the user asks "what did we decide about X", "why did we do it this
+  way", "что мы решили про X", "почему мы так сделали", or runs /pm-recall.
 allowed-tools: Bash Read Glob Grep
 ---
 
-# Вспомнить решение
+# Recall a decision
 
-## Шаги
+## Steps
 
-1. Прочитай `index.md`. Дальше иди по ссылкам, не перебирай все папки.
-2. Собери по теме: файлы в `context/`, темы в `topics/`, затем `decisions/`,
-   `specs/` и `calls/`.
-3. Прочитай найденное.
-4. Ответь коротко: что решили, когда, на основании чего.
-5. К каждому утверждению дай ссылку `[[имя-файла]]`.
-6. Нашёл два документа, которые спорят между собой, — покажи оба и скажи, какой новее. Не выбирай за человека.
-7. Ничего не нашёл — так и скажи. Не собирай ответ из догадок.
+1. Read `index.md`. Then follow the links; don't walk every folder.
+2. Collect what relates to the subject: files in `context/`, topics in
+   `topics/`, then `decisions/`, `specs/` and `calls/`.
+3. Read what you found.
+4. Answer briefly: what was decided, when, and on what basis.
+5. Give every claim a `[[file-name]]` link.
+6. If two documents disagree, show both and say which is newer. Don't choose
+   for the person.
+7. If you found nothing, say so. Don't assemble an answer out of guesses.
 
-## Правила
+## Rules
 
-- Ничего не записывай. Этот скилл только читает.
-- Ответ без ссылок не выдавай.
-- Тему со `status: done` подавай как историю: «закрыли тогда-то, тем-то».
-  Не выдавай её за текущую работу.
-- Если долгосрочный файл в `context/` спорит с активной темой, покажи оба
-  и скажи, какой новее.
+- Write nothing. This skill only reads.
+- Never give an answer without links.
+- Present a `status: done` topic as history: "closed on this date, this way."
+  Don't pass it off as current work.
+- If a long-lived file in `context/` disagrees with an active topic, show both
+  and say which is newer.

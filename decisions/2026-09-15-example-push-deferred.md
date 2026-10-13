@@ -5,28 +5,28 @@ source: raw/2026-09-15-example-weekly-sync-transcript.md
 status: draft
 ---
 
-# Push переносим, счётчик делаем сейчас
+# Defer push, ship the counter now
 
-> Черновик. Статус меняет человек, не агент.
+> Draft. A human changes the status, not the agent.
 
-## Что решили
+## What was decided
 
-Счётчик непрочитанного в разделе сообщений делаем в этом квартале.
-Push-уведомления переносим, не раньше декабря 2026.
+The unread counter in the messages section ships this quarter. Push
+notifications are deferred, not before December 2026.
 
-## Почему
+## Why
 
-- Push требует поднять сервис уведомлений под iOS — около трёх недель работы.
-  [источник: Борис, [[2026-09-15-example-weekly-sync]]]
-- Счётчик — два дня, данные уже приходят на клиент.
-  [источник: Борис, [[2026-09-15-example-weekly-sync]]]
-- Поддержка оценивает, что счётчик снимет половину обращений.
-  [источник: Вера, [[2026-09-15-example-weekly-sync]]]
+- Push requires standing up the iOS notification service — about three weeks
+  of work. [source: Boris, [[2026-09-15-example-weekly-sync]]]
+- The counter is two days; the data already reaches the client.
+  [source: Boris, [[2026-09-15-example-weekly-sync]]]
+- Support estimates the counter removes half the tickets.
+  [source: Vera, [[2026-09-15-example-weekly-sync]]]
 
-## Кто решил
+## Who decided
 
-Аня, продакт. Зафиксировано на встрече.
+Anna, product. Recorded at the meeting.
 
-## Что дальше
+## What happens next
 
-Спека: [[example-unread-badge]]
+Spec: [[example-unread-badge]]

@@ -1,30 +1,30 @@
 ---
 name: pm-setup
 description: >
-  Создаёт структуру второго мозга продакта в пустой папке. Используй,
-  когда пользователь говорит "настрой базу", "создай второй мозг",
-  "set up my PM vault", или запускает /pm-setup.
+  Creates the structure of a product manager's second brain in an empty
+  folder. Use when the user says "set up my PM vault", "create a second
+  brain", "настрой базу", "создай второй мозг", or runs /pm-setup.
 allowed-tools: Bash Read Write Glob
 ---
 
-# Настройка базы
+# Set up the base
 
-## Шаги
+## Steps
 
-1. Спроси, в какой папке создать базу. Предложи текущую.
-2. Создай папки `context/`, `topics/`, `raw/`, `calls/`, `decisions/`, `specs/`.
-3. Скопируй `AGENTS.md` из этого скилла в корень базы.
-4. Создай `index.md` — карту базы. Разделы: долгосрочное, сейчас в работе,
-   закрытые темы, решения, спеки, встречи. Пока пустые.
-5. Спроси, какими агентами пользуется человек. Для каждого создай ссылку на `AGENTS.md`:
+1. Ask which folder the base goes in. Offer the current one.
+2. Create the folders `context/`, `topics/`, `raw/`, `calls/`, `decisions/`, `specs/`.
+3. Copy `AGENTS.md` from this skill into the root of the base.
+4. Create `index.md` — the map of the base. Sections: long-lived, current work,
+   closed topics, decisions, specs, meetings. Empty for now.
+5. Ask which agents the person uses. Create a pointer to `AGENTS.md` for each:
    - Claude Code — `CLAUDE.md`
    - Cursor — `.cursor/rules/pm-second-brain.mdc`
    - Gemini CLI — `GEMINI.md`
-   - Codex — `AGENTS.md` уже подходит
-6. Предложи выполнить `git init` и первый коммит.
-7. Покажи, что получилось, и назови следующий шаг: описать продукт в `context/` и завести первую тему
-   через `/pm-topic`.
+   - Codex — `AGENTS.md` already works
+6. Offer to run `git init` and make the first commit.
+7. Show what was created and name the next step: describe the product in
+   `context/` and open the first topic with `/pm-topic`.
 
-## Если папка занята
+## If the folder is not empty
 
-Ничего не перезаписывай. Скажи, какие файлы уже есть, и спроси, что делать.
+Overwrite nothing. Say which files already exist and ask what to do.

@@ -1,25 +1,28 @@
-Транскрипт (пример, вымышленный продукт — приложение для онлайн-курсов)
-Встреча: еженедельный синк, 15 сентября 2026
-Участники: Аня (продакт), Борис (разработка), Вера (поддержка)
+Transcript (example, fictional product — an online-course app)
+Meeting: weekly sync, 15 September 2026
+Present: Anna (product), Boris (engineering), Vera (support)
 
-Вера: За две недели 34 обращения про одно и то же. Люди не видят, что пришло
-новое сообщение от преподавателя. Заходят раз в неделю и находят ответ
-трёхдневной давности.
+Vera: Thirty-four tickets in two weeks, all the same thing. People don't see
+that a new message from their teacher has arrived. They log in once a week and
+find a reply that's three days old.
 
-Аня: Push-уведомления это решают?
+Anna: Would push notifications fix it?
 
-Борис: Решают, но не в этом квартале. У нас не поднят сервис уведомлений под
-iOS, это отдельная работа недели на три. Раньше декабря не начнём.
+Boris: They would, but not this quarter. We haven't stood up the iOS
+notification service — that's about three weeks of work on its own. We won't
+start before December.
 
-Аня: А счётчик непрочитанного на иконке раздела?
+Anna: What about an unread counter on the section icon?
 
-Борис: Это два дня. Данные уже приходят, надо только показать число.
+Boris: That's two days. The data already reaches the client, we just have to
+show the number.
 
-Вера: Половину обращений это снимет. Люди хотя бы увидят, что что-то есть.
+Vera: That takes half the tickets away. At least people will see there's
+something there.
 
-Аня: Тогда делаем счётчик сейчас, push переносим. Решение за мной, зафиксирую.
+Anna: Then we ship the counter now and defer push. My call, I'll write it down.
 
-Борис: Только учти, число надо сбрасывать при открытии раздела, иначе будет
-висеть вечно. И непонятно, что показывать при числе больше 99.
+Boris: Just remember the number has to reset when the section opens, otherwise
+it sits there forever. And it's not clear what to show above 99.
 
-Аня: Про 99 не знаю, спрошу у дизайна.
+Anna: No idea about the 99. I'll ask design.

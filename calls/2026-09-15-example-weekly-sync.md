@@ -5,25 +5,25 @@ source: raw/2026-09-15-example-weekly-sync-transcript.md
 status: draft
 ---
 
-# Еженедельный синк, 15 сентября 2026
+# Weekly sync, 15 September 2026
 
-> Черновик. Составлен агентом, требует ревью.
+> Draft. Written by the agent, needs review.
 
-**Кто был:** Аня (продакт), Борис (разработка), Вера (поддержка).
+**Present:** Anna (product), Boris (engineering), Vera (support).
 
-## О чём говорили
+## What was discussed
 
-Пользователи не замечают новые сообщения от преподавателей. За две недели
-34 обращения в поддержку. [источник: raw/2026-09-15-example-weekly-sync-transcript.md]
+Users don't notice new messages from teachers. Thirty-four support tickets in
+two weeks. [source: raw/2026-09-15-example-weekly-sync-transcript.md]
 
-## Что решили
+## What was decided
 
-- Push-уведомления переносим, счётчик непрочитанного делаем сейчас.
-  Подробности: [[2026-09-15-example-push-deferred]]
+- Defer push notifications, ship the unread counter now.
+  Details: [[2026-09-15-example-push-deferred]]
 
-## Что осталось открытым
+## Left open
 
-- Что показывать, когда непрочитанных больше 99. Аня спросит у дизайна.
-  `[проверить]`
-- Сброс счётчика при открытии раздела назван Борисом как требование, но
-  отдельно не подтверждён. `[проверить]`
+- What to show when there are more than 99 unread. Anna will ask design.
+  `[verify]`
+- Resetting the counter when the section opens was named by Boris as a
+  requirement, but not confirmed separately. `[verify]`

@@ -1,35 +1,35 @@
 ---
 type: topic
 date: 2026-07-20
-source: "TBD — тема заведена до того, как появилась база"
+source: "TBD — this topic predates the knowledge base"
 status: done
 ---
 
-# Поиск по курсам
+# Course search
 
-> Короткосрочное, **закрыто 20 июля 2026**. Это история. Не читай как текущую
-> работу.
+> Short-lived, **closed 20 July 2026**. This is history. Do not read it as
+> current work.
 
-## Зачем открывали
+## Why it was opened
 
-Ученики не находили купленный курс в списке, когда курсов больше десяти.
+Students couldn't find a course they had bought once their list ran past ten.
 
-## Чем закончилось
+## How it ended
 
-Поиск по названию курса вышел в прод 18 июля 2026. Обращения по теме
-прекратились. Тему закрыли 20 июля.
+Search by course title shipped on 18 July 2026. Tickets on the subject stopped.
+The topic was closed on 20 July.
 
-## Источник
+## Source
 
-Не зафиксирован: тему вели до появления базы. Всё, что про неё известно,
-лежит в разделе «Ход темы» ниже. `TBD`
+Not recorded: the topic was run before the knowledge base existed. Everything
+known about it is in the Log below. `TBD`
 
-## Что осталось за рамками
+## Left out of scope
 
-Поиск внутри урока. Отдельной темы под это не открывали. `TBD`
+Search inside a lesson. No separate topic was opened for it. `TBD`
 
-## Ход темы
+## Log
 
-- 2026-06-15 — тема открыта.
-- 2026-07-18 — поиск в проде.
-- 2026-07-20 — тема закрыта.
+- 2026-06-15 — topic opened.
+- 2026-07-18 — search in production.
+- 2026-07-20 — topic closed.
