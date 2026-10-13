@@ -30,6 +30,11 @@ whether it is product material at all.
 Some files you cannot read — archives, installers, video, binaries. Don't
 guess at their contents from the filename.
 
+Don't open images either, even though you can. A screenshot carries no
+provenance: you cannot tell what it shows, when it was taken or whether the
+numbers in it are still true, and twenty of them will eat the session for
+nothing. List them by filename and ask which ones matter.
+
 ### 2. Show the plan and wait
 
 Show a table — file, what you think it is, where it would go, why — grouped by
