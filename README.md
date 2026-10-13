@@ -37,6 +37,7 @@ swapped for another one at any time.
 
 ```
 index.md     map of the base. The agent reads it first
+inbox/       the queue: anything dumped in, not yet sorted
 context/     long-lived: product, customers, constraints
 topics/      short-lived: what is in work now
 raw/         sources: transcripts, emails, exports. Never changed
@@ -49,6 +50,20 @@ Three more folders are not the base itself but tooling and material about it:
 `skills/` with the commands, `promo/` with the texts that explain the project,
 and `ru/` with the same example set in Russian. Clone it for yourself and you
 can delete `promo/` and `ru/`.
+
+## Starting with what you already have
+
+Nobody starts empty. There are years of material already on disk — downloads,
+exports, meeting notes, a folder per customer.
+
+Don't reorganise any of it. Make the base one level above it, copy that
+material into `inbox/`, and run `/pm-inbox`. Every file gets one of four
+outcomes: it becomes a source in `raw/`, it becomes a document that cites a
+source, it stays in the queue with a question against it, or it is left alone
+because it is not product material. Nothing is deleted and the originals are
+untouched.
+
+`inbox/` empties. `raw/` does not.
 
 ## Long and short
 
@@ -84,6 +99,7 @@ index is a file nobody will find.
 | Command | What it does |
 |---|---|
 | `/pm-setup` | creates the structure in an empty folder |
+| `/pm-inbox` | sorts whatever landed in `inbox/` into the right folders |
 | `/pm-topic` | opens, shows and closes topics |
 | `/pm-call` | turns a transcript into a note and a list of decisions |
 | `/pm-spec` | builds a draft spec out of notes |

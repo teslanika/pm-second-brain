@@ -6,9 +6,11 @@ files in this folder.
 ## Structure
 
 - `index.md` — map of the base. **Read it first.**
+- `inbox/` — the queue: whatever was dumped in, not yet sorted. Empties.
 - `context/` — long-lived: product, customers, constraints. Does not go stale.
 - `topics/` — short-lived: what is in work now. Every topic has an end.
 - `raw/` — sources: transcripts, emails, exports. **Do not change these files.**
+  `inbox/` is a queue and empties; `raw/` is evidence and is kept forever.
 - `calls/` — meeting notes. One meeting, one file.
 - `decisions/` — what was decided and why. One decision, one file.
 - `specs/` — what is being built. One feature, one file.

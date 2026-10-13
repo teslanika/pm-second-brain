@@ -52,6 +52,11 @@ History. Do not read as current work.
 - [[AGENTS]] — the rules the agent reads before every task.
 - [[README]] — why this exists and what the commands are.
 
+`inbox/` is not in the index either. It is a queue, not knowledge: files sit
+there until `/pm-inbox` sorts them, and then the line appears here. In the
+graph they show up as loose dots with no links — which is exactly what
+unsorted material is.
+
 The skills in `skills/` are tools, not knowledge. They are not in the index,
 and the graph hides them with the filter `-path:skills`. There is one list of
 commands and it lives in the README.
