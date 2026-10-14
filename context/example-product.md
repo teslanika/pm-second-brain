@@ -5,14 +5,14 @@ source: calls/2026-09-15-example-weekly-sync.md
 status: confirmed
 ---
 
-# Product
+# Product — Edumatica
 
 > Long-lived. This file is never closed — it is edited when a fact changes.
 
 ## What it is
 
-An online-course platform. A student buys a course, works through the lessons,
-and exchanges messages with a teacher.
+Edumatica, an online-course platform. A student buys a course, works through
+the lessons, and exchanges messages with a teacher.
 
 ## Who uses it
 

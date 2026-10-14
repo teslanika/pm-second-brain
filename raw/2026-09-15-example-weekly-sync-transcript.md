@@ -1,4 +1,4 @@
-Transcript (example, fictional product — an online-course app)
+Transcript (example, fictional product — Edumatica, an online-course app)
 Meeting: weekly sync, 15 September 2026
 Present: Anna (product), Boris (engineering), Vera (support)
 

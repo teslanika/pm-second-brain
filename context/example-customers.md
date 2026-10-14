@@ -9,7 +9,7 @@ status: confirmed
 
 > Long-lived. This file is never closed — it is edited when a fact changes.
 
-## Example School
+## Lanterna
 
 - Around 4,000 active students.
 - Asking for per-group reports. The request has recurred since spring 2026.
