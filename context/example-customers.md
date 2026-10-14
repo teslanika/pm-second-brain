@@ -14,6 +14,10 @@ status: confirmed
 - Around 4,000 active students.
 - Asking for per-group reports. The request has recurred since spring 2026.
 - Contact: not recorded. `TBD`
+- Dates given by email on 20 August 2026: push notifications — November,
+  per-group reports — Q1 2027. On push the 15 September decision says
+  otherwise: [[2026-09-15-example-push-deferred]].
+  [source: raw/2026-08-20-example-lanterna-email.md]
 
 ## What customers ask for most often
 
@@ -25,3 +29,4 @@ status: confirmed
 ## Edit history
 
 - 2026-09-01 — created.
+- 2026-09-15 — added the dates given to the customer by email.
